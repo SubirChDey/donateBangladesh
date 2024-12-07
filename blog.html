@@ -7,6 +7,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" class="css">
     <title>Document</title>
+    <style>
+        .set-width {
+            max-width: 80%;
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -27,10 +33,11 @@
         </nav>
     </header>
     <main>
-        <div class="w-11/12 mx-auto space-y-2">
-            <h2 class="text-5xl font-semibold my-6">Important FAQ</h2>
-        </div>     
-        <div class="container w-11/12 mx-auto space-y-4">
+            
+        <div class=" mx-auto space-y-4 set-width">
+            <div>
+                <h2 class="text-5xl font-semibold my-6">Important FAQ</h2>
+            </div> 
             <div class="join join-vertical w-full">
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                   <input type="radio" name="my-accordion-4" checked="checked" />
