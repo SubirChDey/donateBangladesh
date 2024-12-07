@@ -11,6 +11,20 @@
         .set-width {
             max-width: 80%;
         }
+        @media screen and (max-width: 576px) {
+          .important-faq{
+            width: 100%;           
+            text-align: center;            
+          }
+
+          .question-bubble{
+            display: none;
+            border: 1px solid red;
+            
+
+          }
+          
+        }
 
     </style>
 </head>
@@ -35,8 +49,9 @@
     <main>
             
         <div class=" mx-auto space-y-4 set-width">
-            <div>
-                <h2 class="text-5xl font-semibold my-6">Important FAQ</h2>
+            <div class="flex gap-3">
+                <h2 class="important-faq text-4xl font-semibold my-6">Important FAQ</h2>
+                <img class="question-bubble" width="50px" src="assets/question-bubble.png" alt="">
             </div> 
             <div class="join join-vertical w-full">
                 <div class="collapse collapse-arrow join-item border-base-300 border">
