@@ -1,9 +1,9 @@
-document.getElementById('noakhaliDonateBtn').addEventListener('click', function(event){
+document.getElementById('noakhali-Donate-Btn').addEventListener('click', function(event){
     event.preventDefault();
-    const noakhaliDonateMoney = document.getElementById('noakhaliDonateInput').value;  
-    const donateMoneyNumber = parseFloat(NoakhaliDonateMoney);
-      const noakhaliDonateBalance = getElementById('noakhaliBalance').innerText;
-      const noakhaliDonateBalanceNumber = parseFloat(noakhaliDonateBalance);
-      
-      
+    const donateMoney = document.getElementById('noakhali-donate-input').value;  
+    const donateMoneyNumber = parseFloat(donateMoney);
+      const noakhaliBalance = document.getElementById('noakhali-Balance').innerText;
+      const noakhaliBalanceNumber = parseFloat(noakhaliBalance);
+
+      const nokhaliNewBalance = noakhaliBalanceNumber + donateMoneyNumber;
 })
