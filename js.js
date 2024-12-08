@@ -8,7 +8,7 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
   const mainBalance = getTextById('main-balance');
 
 
-  if (noakhaliDonateMoney > 0 && !isNaN(noakhaliBalance) && mainBalance > noakhaliDonateMoney) {
+  if (noakhaliDonateMoney > 0 && !isNaN(noakhaliDonateMoney) && mainBalance > noakhaliDonateMoney) {
     const noakhaliNewBalance = noakhaliBalance + noakhaliDonateMoney;
     const mainNewBalance = mainBalance - noakhaliDonateMoney;
 
@@ -49,7 +49,7 @@ document.getElementById('feni-donate-btn').addEventListener('click', function (e
   const mainBalance = getTextById('main-balance');
 
 
-  if (feniDonateMoney > 0 && mainBalance > feniDonateMoney) {
+  if (feniDonateMoney > 0 && !isNaN(feniDonateMoney) && mainBalance > feniDonateMoney) {
     const feniNewBalance = feniBalance + feniDonateMoney;
     const mainNewBalance = mainBalance - feniDonateMoney;
 
@@ -89,7 +89,7 @@ document.getElementById('quota-donate-btn').addEventListener('click', function (
   const mainBalance = getTextById('main-balance');
 
 
-  if (quotaDonateMoney > 0 && mainBalance > quotaDonateMoney) {
+  if (quotaDonateMoney > 0 && !isNaN(quotaDonateMoney) && mainBalance > quotaDonateMoney) {
     const quotaNewBalance = quotaBalance + quotaDonateMoney;
     const mainNewBalance = mainBalance - quotaDonateMoney;
 
