@@ -124,9 +124,25 @@ document.getElementById('quota-donate-btn').addEventListener('click', function (
 // toggle menu section
 document.getElementById('donation-btn').addEventListener('click', function () {
   toggleMenuById('donation-section');
+  document.getElementById('history-btn').classList.remove('bg-[#B4F461]');
+  document.getElementById('donation-btn').classList.add('bg-[#B4F461]');
+
 })
 document.getElementById('history-btn').addEventListener('click', function () {
   toggleMenuById('transaction-section');
+  document.getElementById('donation-btn').classList.remove('bg-[#B4F461]');
+  document.getElementById('history-btn').classList.add('bg-[#B4F461]');
 })
+
+
+
+
+function toggleMenuById(id){
+  document.getElementById('donation-section').classList.add('hidden');
+  document.getElementById('transaction-section').classList.add('hidden');
+
+  document.getElementById(id).classList.remove('hidden');
+}
+
 
 

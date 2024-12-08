@@ -12,11 +12,5 @@ function getTextById(id) {
     return textValueNumber;
 }
 
-function toggleMenuById(id){
-    document.getElementById('donation-section').classList.add('hidden');
-    document.getElementById('transaction-section').classList.add('hidden');
-
-    document.getElementById(id).classList.remove('hidden');
-}
 
 

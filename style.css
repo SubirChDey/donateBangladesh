@@ -69,13 +69,6 @@
 
 }
 
-.btn-donation:active {
-    background-color: yellow;
-}
-
-.btn-donation:visited {
-    color: green;
-}
 
 /* card section starts */
 .card-1 {
@@ -103,12 +96,10 @@
 
 .flood-image {
     width: 100%;
-    /* border: 1px solid red; */
 }
 
 .flood-image img {
     width: 90%;
-    /* border: 1px solid red; */
 }
 
 .text-field {
