@@ -8,7 +8,7 @@ document.getElementById('noakhali-donate-btn').addEventListener('click', functio
   const mainBalance = getTextById('main-balance');
 
 
-  if (noakhaliDonateMoney > 0 && mainBalance > noakhaliDonateMoney) {
+  if (noakhaliDonateMoney > 0 && !isNaN(noakhaliBalance) && mainBalance > noakhaliDonateMoney) {
     const noakhaliNewBalance = noakhaliBalance + noakhaliDonateMoney;
     const mainNewBalance = mainBalance - noakhaliDonateMoney;
 
@@ -133,8 +133,6 @@ document.getElementById('history-btn').addEventListener('click', function () {
   document.getElementById('donation-btn').classList.remove('bg-[#B4F461]');
   document.getElementById('history-btn').classList.add('bg-[#B4F461]');
 })
-
-
 
 
 function toggleMenuById(id){
