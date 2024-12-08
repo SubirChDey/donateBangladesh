@@ -1,6 +1,15 @@
+// Shared function
 function getValueById(id) {
-    const noakhaliInputValue = document.getElementById(id).value;
-    const noakhaliInputValueNumber = parseFloat(noakhaliInputValue);
+    const inputValue = document.getElementById(id).value;
+    const inputValueNumber = parseFloat(inputValue);
 
-    return noakhaliInputValueNumber;
+    return inputValueNumber;
 }
+
+function getTextById(id) {
+    const textValue = document.getElementById(id).innerText;
+    const textValueNumber = parseFloat(textValue);
+    return textValueNumber;
+}
+
+

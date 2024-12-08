@@ -56,7 +56,7 @@
                     <input id="noakhali-donate-input" class="input-for-noakhali" type="text" placeholder="Write Donation Amount">
                 </div>
                 <div>
-                    <button id="noakhali-Donate-Btn" class="donate-now-btn"> Donate Now</button>
+                    <button id="noakhali-donate-btn" class="donate-now-btn "> Donate Now</button>
                 </div>
             </div>
         </div>
@@ -114,7 +114,24 @@
                 </div>
             </div>
         </div>
+
+         <!-- modal for successful donation -->
+        <dialog id="my_modal_1" class="modal">
+            <div class="modal-box text-center">
+              <h3 class="text-3xl font-bold">Congrates!</h3>
+              <div class="flex justify-center mt-5"><img src="assets/coin.png" alt=""></div>
+              <p class="py-5 font-medium">You are donated for humankind</p>
+              <h4 class="text-xl font-bold">Successfully</h4>
+              <div class="modal-action flex justify-center font-medium">
+                <form method="dialog">                  
+                  <button class="btn">Close confirmation</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
     </main>
+    <script src="tailwind.config.js"></script>
+    <script src="utilities.js"></script>
     <script src="js.js"></script>
 </body>
 

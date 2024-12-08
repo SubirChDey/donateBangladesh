@@ -1,26 +1,23 @@
-document.getElementById('noakhali-Donate-Btn').addEventListener('click', function (event) {
+// Noakhali flood donation
+
+document.getElementById('noakhali-donate-btn').addEventListener('click', function(event){
   event.preventDefault();
-  const donateMoney = document.getElementById('noakhali-donate-input').value;
 
-  const noakhaliBalance = document.getElementById('noakhali-Balance').innerText;
+  const noakhaliDonateMoney = getValueById('noakhali-donate-input');
+  const noakhaliBalance = getTextById('noakhali-Balance');
+  const mainBalance = getTextById('main-balance');
 
-  const mainBalance = document.getElementById('main-balance').innerText;
-  const donateMoneyNumber = parseFloat(donateMoney);
-  const noakhaliBalanceNumber = parseFloat(noakhaliBalance);
-  const mainBalanceNumber = parseFloat(mainBalance);
-
-  if (donateMoneyNumber > 0) {
-
-    const noakhaliNewBalance = noakhaliBalanceNumber + donateMoneyNumber;
-    const mainNewBalance = mainBalanceNumber - donateMoneyNumber;
-
+  if (noakhaliDonateMoney > 0 && mainBalance > noakhaliDonateMoney) {
+    const noakhaliNewBalance = noakhaliBalance + noakhaliDonateMoney;
+    const mainNewBalance = mainBalance - noakhaliDonateMoney;
+    
     document.getElementById('noakhali-Balance').innerText = noakhaliNewBalance;
-    document.getElementById('main-balance').innerText = mainNewBalance;
-
-
+    document.getElementById('main-balance').innerText = mainNewBalance;    
+    my_modal_1.showModal()
   }
   else {
-    alert('Go back')
-
+    alert('Donate error')
+    
   }
+  
 })
