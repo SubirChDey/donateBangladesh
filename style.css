@@ -15,6 +15,10 @@
     
 }
 
+.start-menu{
+    display: none;
+}
+
 .blog-button {
     background-color: #B4F461;
     padding: 8px 20px;
@@ -39,18 +43,18 @@
     font-size: 1.2rem;
     font-weight: bold;
 }
+.header{
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+}
 
 /* Toggle menu starts */
 .toggle-menu {
     align-items: center;
     text-align: center;
-    padding: 3rem;
-    background-color: white;
-    position: sticky;
-    top: -20px;
-    overflow: hidden;
-
-
+    padding: 2.5rem;
+    background-color: rgb(255, 255, 255);    
 }
 
 .btn-donation,
@@ -85,7 +89,7 @@
     /* gap: 20px; */
 }
 
-.balance-for-noakhali {
+.balance-for-noakhali, .balance-for-feni, .balance-for-quota {
     display: flex;
     background-color: #f4f2f2;
     border-radius: 8px;
@@ -111,7 +115,7 @@
     width: 100%;
 }
 
-.noakhali-title {
+.noakhali-title, .feni-title, .quota-title {
     font-size: 1.6rem;
     margin-top: 1rem;
     font-weight: 600;
@@ -123,7 +127,7 @@
     color: #666666;
 }
 
-.input-for-noakhali {
+.input-for-noakhali, .input-for-feni, .input-for-quota {
     border: 1px solid #f1efef;
     width: 100%;
     margin-top: 1rem;
@@ -147,15 +151,31 @@
 /* responsive and mediaquery */
 @media screen and (max-width: 576px) {
     .nav-container {
-        height: 170px;
+        height: 140px;
+    }  
+    .nav-menu {
+        flex-direction: row;
+        gap: 20px;
+        margin-top: 10px;       
     }
 
-    .nav-menu {
-        flex-direction: column;
-        gap: 20px;
-        margin-top: 10px;
-        padding: 10px;
+    .start-menu{
+        display: block;
+        display: flex;        
+        justify-content: center;  
+        padding-left: 10px;
+        padding-top: 2px;
+        align-items: center;
+        gap: .5rem;
+        
     }
+    .middle-menu{
+        display: none;
+    }
+    .toggle-menu{        
+        padding-bottom: 5px;
+    }
+ 
 
     .card-1 {
         max-width: 100%;
@@ -168,7 +188,7 @@
         width: 100%;
     }
 
-    .balance-for-noakhali {
+    .balance-for-noakhali, .balance-for-feni, .balance-for-quota {
         margin-top: 1.2rem;
     }
 

@@ -11,9 +11,14 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav class="nav-container">
+            <div class="start-menu">
+                <img src="assets/logo.png" alt="">
+                <h2>Donate Bangladesh</h2>
+            </div>
             <div class="nav-menu">
+                
                 <div>
                     <button class="blog-button"> <a href="blog.html">Blog</a> </button>
                 </div>
@@ -27,12 +32,13 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <main>
         <div class="toggle-menu">
             <button id="donation-btn" class="btn-donation">Donation</button>
             <button id="history-btn" class="btn-history">History</button>
         </div>
+    </header>
+    <main>
+        
         <div id="donation-section">
             <div class="card-1">
                 <div class="flood-image">
@@ -66,12 +72,12 @@
                     <img src="assets/feni.png" alt="">
                 </div>
                 <div class="text-field">
-                    <div class="balance-for-noakhali">
+                    <div class="balance-for-feni">
                         <img src="assets/coin.png" alt="">
-                        <h6><span>600 </span><span>BDT</span></h6>
+                        <h6><span id="feni-Balance">600 </span><span>BDT</span></h6>
                     </div>
                     <div>
-                        <h2 class="noakhali-title">
+                        <h2 id="feni-title" class="feni-title">
                             Donate for Flood Relief in Feni,Bangladesh
                         </h2>
                     </div>
@@ -81,10 +87,10 @@
                         </p>
                     </div>
                     <div>
-                        <input class="input-for-noakhali" type="text" placeholder="Write Donation Amount">
+                        <input id="feni-donate-input" class="input-for-feni" type="text" placeholder="Write Donation Amount">
                     </div>
                     <div>
-                        <button class="donate-now-btn"> Donate Now</button>
+                        <button id="feni-donate-btn" class="donate-now-btn "> Donate Now</button>
                     </div>
                 </div>
             </div>
@@ -93,12 +99,12 @@
                     <img src="assets/quota-protest.png" alt="">
                 </div>
                 <div class="text-field">
-                    <div class="balance-for-noakhali">
+                    <div class="balance-for-quota">
                         <img src="assets/coin.png" alt="">
-                        <h6><span>2400 </span><span>BDT</span></h6>
+                        <h6><span id="quota-Balance">2400 </span><span>BDT</span></h6>
                     </div>
                     <div>
-                        <h2 class="noakhali-title">
+                        <h2 id="quota-title" class="quota-title">
                             Aid for Injured in the Quota Movement
                         </h2>
                     </div>
@@ -108,13 +114,14 @@
                         </p>
                     </div>
                     <div>
-                        <input class="input-for-noakhali" type="text" placeholder="Write Donation Amount">
+                        <input id="quota-donate-input" class="input-for-quota" type="text" placeholder="Write Donation Amount">
                     </div>
                     <div>
-                        <button class="donate-now-btn"> Donate Now</button>
+                        <button id="quota-donate-btn" class="donate-now-btn "> Donate Now</button>
                     </div>
                 </div>
             </div>
+           
         </div>
 
          <!-- modal for successful donation -->
